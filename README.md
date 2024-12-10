@@ -8,4 +8,6 @@
 ### 推理：  
 目前是单线程推理，可修改为多线程推理，提高NPU利用率  
 ### 显示：  
-使用OpenGL ES提高效率，利用RK3588的Mali GPU
+使用OpenGL ES提高效率，利用RK3588的Mali GPU  
+### 跟踪：  
+ByteTrack源码也许可以再优化，提高效率
