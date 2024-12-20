@@ -67,8 +67,8 @@ void Decode(DECLoopData* loopdata,u_int8_t* data,size_t pkt_size)
                     RK_U32 ver_stride = mpp_frame_get_ver_stride(frame);
                     RK_U32 buf_size = mpp_frame_get_buf_size(frame);   
                     printf("decoder require buffer w:h [%d:%d] stride [%d:%d] buf_size %d\n", width, height, hor_stride, ver_stride, buf_size);       
-                    loopdata->src_width = width;
-                    loopdata->src_height = height;
+                    loopdata->src_width = hor_stride;
+                    loopdata->src_height = ver_stride;
                     if (NULL == loopdata->frm_grp)
                     {                 
                          //纯外部分配模式    分配DMA_HEAP_DMA32_UNCACHED_PATH  内存
