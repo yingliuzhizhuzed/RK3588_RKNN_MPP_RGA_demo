@@ -4,13 +4,11 @@
 解码使用Mpp，图形预处理使用rga，界面显示用Qt5，rtsp拉流使用Zlmediakit,后处理在cpu上实现  
 
 ## 依赖  
-### runtime:  
-librknnrt.so  
-librga.so  
-librockchip_mpp.so
-Qt5
+MPP for decode
+RGA for preprocecss
+RKNN Runtime for inference 
+Qt5 for GUI  
 
-## 可以改进的地方：  
-### 推理：  
+## 可以改进的地方：    
 1.将单线程推理修改为多线程推理，提高NPU利用率  
 2.使用NPU零拷贝提高效率  
