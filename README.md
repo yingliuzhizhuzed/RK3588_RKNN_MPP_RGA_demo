@@ -2,6 +2,14 @@
 ## 在RK3588上进行目标识别+跟踪  
 模型是官方的yolov5s.rknn，ByteTrack跟踪器参考https://github.com/Handsome36233/bytetrack_cpp.git  
 解码使用Mpp，图形预处理使用rga，界面显示用Qt5，rtsp拉流使用Zlmediakit,后处理在cpu上实现  
+
+## 依赖  
+### runtime:  
+librknnrt.so  
+librga.so  
+librockchip_mpp.so
+Qt5
+
 ## 可以改进的地方：  
 ### 推理：  
 1.将单线程推理修改为多线程推理，提高NPU利用率  
