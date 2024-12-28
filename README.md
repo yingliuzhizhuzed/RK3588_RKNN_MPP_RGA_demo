@@ -4,10 +4,10 @@
 解码使用Mpp，图形预处理使用rga，界面显示用Qt5，rtsp拉流使用Zlmediakit,后处理在cpu上实现  
 
 ## 依赖  
-MPP for decode
-RGA for preprocecss
-RKNN Runtime for inference 
-Qt5 for GUI  
+1.MPP for decode  
+2.RGA for preprocecss  
+3.RKNN Runtime for inference   
+4.Qt5 for GUI   
 
 ## 可以改进的地方：    
 1.将单线程推理修改为多线程推理，提高NPU利用率  
