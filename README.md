@@ -8,7 +8,7 @@
 2.RGA for preprocecss  
 3.RKNN Runtime for inference   
 4.Qt5 for GUI   
-
+5.ZlmediaKit for rtsp pull video stream
 ## 可以改进的地方：    
 1.将单线程推理修改为多线程推理，提高NPU利用率  
 2.使用NPU零拷贝提高效率  
